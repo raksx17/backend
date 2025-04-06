@@ -1,0 +1,77 @@
+GET http://localhost:3000/User-API/getusers
+
+###
+
+POST http://localhost:3000/User-API/login
+Content-Type: application/json
+
+{
+    "username": "divya",
+    "password": "divya"
+}
+
+###
+
+POST http://localhost:3000/User-API/create-user
+Content-Type: application/json
+
+{
+    "username":"raksdivya",
+    "password":"raksdivya",
+    "email":"raksdivya@gmail.com",
+    "city":"hyderabad"
+}
+
+###
+
+PUT http://localhost:3000/User-API/update-user
+Content-Type: application/json
+
+{
+   
+    "username" : "raksdivya",
+    "email":"raksdivya69@gmail.com",
+    "city":"begumpet"
+    }
+
+
+###
+
+DELETE http://localhost:3000/User-API/delete-user/raksdivya 
+
+###
+
+GET http://localhost:3000/Product-API/getproducts
+
+###
+
+GET http://localhost:3000/Product-API/getproduct/300
+
+###
+
+POST http://localhost:3000/Product-API/create-product
+Content-Type: application/json
+
+{
+    "productId" : 300,
+    "productName" : "Washing Machine",
+    "brand": "LG",
+    "price": 30000
+    } 
+ 
+###
+
+PUT http://localhost:3000/Product-API/update-product
+Content-Type: application/json
+
+{
+    "productId" : 300,
+    "productName" : "Washing Machine",
+    "brand": "LG",
+    "price": 20
+}
+
+
+###
+
+DELETE http://localhost:3000/Product-API/delete-product/300
